@@ -1,0 +1,211 @@
+/* General Reset */
+body, h1, h2, p, table, th, td, ul, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeee07;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background: #13f907;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+
+/* Section Styling */
+.summary-report {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.summary-report h2 {
+    font-size: 1.8rem;
+    color: #3cff00;
+    margin-bottom: 15px;
+    text-align: center;
+    border-bottom: 2px solid hsl(54, 100%, 50%);
+    padding-bottom: 5px;
+}
+
+.statistics p {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table thead th {
+    background-color: #19ac11;
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-size: 1.4rem;
+}
+
+table tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #e9f5ff;
+}
+
+table tbody td:first-child {
+    font-weight: bold;
+}
+
+/* Center the button inside the section */
+.export-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#export-button {
+    background-color: #37e30c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#export-button:hover {
+    background-color: #0af722;
+}
+
+#export-options {
+    display: none;
+    position: absolute;
+    background-color: rgb(229, 236, 10);
+    min-width: 150px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#export-options a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+#export-options a:hover {
+    background-color: #0ec304;
+}
+
+/* Show the dropdown on button hover */
+.export-container:hover #export-options {
+    display: block;
+}
+
+
+/* Canvas Charts */
+canvas {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    .summary-report {
+        padding: 15px;
+    }
+
+    .statistics p {
+        font-size: 0.9rem;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    table thead th, table tbody td {
+        padding: 8px;
+    }
+
+    canvas {
+        max-width: 100%;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.2rem;
+    }
+
+    .summary-report h2 {
+        font-size: 1.4rem;
+    }
+
+    .statistics p {
+        font-size: 0.8rem;
+    }
+
+    table thead th, table tbody td {
+        font-size: 0.7rem;
+        padding: 6px;
+    }
+}

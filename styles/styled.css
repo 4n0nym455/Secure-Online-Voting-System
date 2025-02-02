@@ -1,0 +1,168 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(217, 210, 10);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Form container styling */
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%; /* Responsive width for smaller screens */
+    max-width: 500px; /* Limit width for larger screens */
+}
+
+/* Logo styling */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 200px;
+    height: auto;
+}
+
+/* Heading styling */
+h1 {
+    color: #48f309;
+    font-size: 2rem; /* Adjusted for better scaling on smaller screens */
+    font-weight: bolder;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    color: #33ef09;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+input {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-weight: 500; /* For placeholder consistency */
+}
+
+input:focus {
+    border-color: #48f309;
+    outline: none;
+    box-shadow: 0 0 5px rgba(72, 243, 9, 0.5);
+}
+
+/* Password wrapper styling */
+.pass-wrapper {
+    text-align: left;
+    position: relative;
+}
+
+.pass-wrapper input[type="password"] {
+    width: 100%;
+    padding-right: 40px; /* Space for the toggle button */
+}
+
+.pass-wrapper button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #666;
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #2bff00;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: green;
+}
+
+button:hover {
+    background-color: #33b300;
+}
+
+.confirmation-text {
+    text-align: center;
+    font-size: 0.9em;
+    color: #777;
+    margin-top: 20px;
+}
+/* Error message styling */
+.errors strong {
+    color: red;
+    font-size: 1.1rem;
+    
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    input {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    button {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+}

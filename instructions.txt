@@ -1,0 +1,41 @@
+  Must_Voting_System Project
+  
+  #Admin login creds
+admin username, email and password :
+
+adminuser001
+adminuser001@gmail.com
+admin001@Voting
+
+
+#<for the command-line Gurus.>
+1. Importing the database:
+
+    mysql -u root -p must_voting_system < Must_Voting_System/database/must_voting_system.sql
+
+2. Giving privileges to root user @ localhost:
+
+    GRANT ALL PRIVILEGES ON must_voting_system.* TO 'root'@'localhost' IDENTIFIED BY '' WITH GRANT OPTION; FLUSH PRIVILEGES;
+    
+
+
+3. Open another terminal and type, php -S ip_addr:port -t path/to/Must_Voting_System and press enter.
+
+4. Open your browser and enter ip_addr:port
+
+
+
+#<for the GUI masters>
+
+1. Extract the project zip inside the ../lampp/htdocs folder for xampp
+
+2. Open xampp and start services
+
+3. Go to your preferred browser and enter http://localhost/
+
+4. Create a database named must_voting_system in phpMyAdmin
+
+5. Import the sqldump from Must_Voting_System/database/must_voting_system.sql into the created database.
+
+6. Type http://localhost/index.php
+

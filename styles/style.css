@@ -1,0 +1,178 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(217, 210, 10);
+   
+}
+
+h2 {
+    color:#1fad0c;
+}
+
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.logo {
+    width: 120px; 
+    height: auto;
+}
+
+
+
+
+
+.container {
+    width: 40%;
+    text-align: center;
+    padding: 30px 25px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.container p {
+    color: #05d8fdf2;
+    font-size: 2.1rem;
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+.errors strong {
+    color: red;
+    font-size: 1.1rem;
+    
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 40px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 1000;
+    color: #666;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #2be809;
+}
+
+select {
+    background-color: #f9f9f9;
+    color: #333;
+    cursor: context-menu;
+}
+
+
+.pass-wrapper {
+    text-align: left;
+    position: relative;
+}
+
+.pass-wrapper input[type="password"] {
+    width: 100%;
+    padding-right: 40px;
+    
+}
+
+.pass-wrapper button {
+    width: 10%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #666;
+    padding: 20px 10px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #3fa211ea;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+button[type="submit"]:hover {
+    background-color: #0ad614;
+}
+
+.buttons a {
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: #fff;
+    background-color: #1fad0c;
+    text-decoration:none;
+    border-radius: 25px;
+    transition: background-color 3.0s ease;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.buttons a:hover {
+    background-color: #e0f408;
+} 
+
+
+@media (max-width: 480px){
+    h1{
+        font-size: 1.8rem;
+    }
+    .container p {
+        font-size: 1rem;
+    }
+    .buttons a {
+        font-size: 0.9rem;
+        padding:10px 20px;
+    }
+    
+}

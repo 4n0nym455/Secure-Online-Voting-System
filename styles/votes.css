@@ -1,0 +1,181 @@
+/* General reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2df0a;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #00b300e1;
+    color: #fff;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+h1, h2, h3 {
+    margin: 0.5rem 0;
+    text-align: center;
+}
+
+h2 {
+    color: green;
+}
+
+/* Section styling */
+section {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Statistics section */
+.statistics p {
+    font-size: 1.1rem;
+    margin: 0.5rem 0;
+}
+
+.statistics-content {
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping for smaller screens */
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+}
+
+.statistics-text {
+    flex: 1;
+    min-width: 250px; /* Ensures proper wrapping on smaller screens */
+}
+
+.statistics-chart {
+    flex: 1;
+    max-width: 400px;
+}
+
+canvas {
+    width: 100%;
+    height: auto;
+}
+
+/* Adjust canvas for responsiveness */
+#presidentialVotesBySchool {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Results table */
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+    font-size: 0.95rem;
+}
+
+.results th, .results td {
+    border: 1px solid #ddd;
+    text-align: left;
+    padding: 0.8rem;
+}
+
+.results th {
+    background-color: #b3b000;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+.results tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.results tbody tr:hover {
+    background-color: #e6f7ff;
+}
+
+/* Percentage bar */
+.percentage-bar {
+    position: relative;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-top: 0.5rem;
+}
+
+.percentage-bar span {
+    display: block;
+    height: 100%;
+    background-color: #4caf50;
+    text-align: center;
+    color: white;
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* General font scaling */
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        font-size: 1.2rem;
+        padding: 0.8rem 0.5rem;
+    }
+
+    section {
+        padding: 0.8rem;
+    }
+
+    .statistics-content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start;
+    }
+
+    .statistics-text, .statistics-chart {
+        flex: unset; /* Reset flex for vertical layout */
+        width: 100%; /* Ensure full width */
+    }
+
+    #presidentialVotesBySchool {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further scaling for extra-small devices */
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    .results th, .results td {
+        padding: 0.5rem; /* Smaller padding for table cells */
+        font-size: 0.85rem;
+    }
+
+    section {
+        margin: 1rem auto;
+        padding: 0.5rem;
+    }
+
+    .percentage-bar span {
+        font-size: 0.75rem;
+    }
+}
