@@ -1,5 +1,5 @@
 
-# [Secure Online Voting System]
+# Secure Online Voting System
 
 A robust and secure online voting platform designed to ensure the integrity, transparency, and privacy of every vote. This system leverages modern cryptographic techniques and best practices to provide a trustworthy voting experience.
 
